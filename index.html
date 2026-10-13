@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luma Home Goods CRO Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Luma Home Goods CRO Dashboard</h1>
+    <p>Interactive ecommerce experiment summary for hypothesis tracking, conversion lift, revenue impact, and rollout decisions.</p>
+  </header>
+  <main>
+    <section class="summary" aria-label="Experiment summary">
+      <article><span id="variant">Variant B</span><strong>Winner</strong></article>
+      <article><span id="lift">+14.8%</span><strong>Conversion lift</strong></article>
+      <article><span id="revenue">$8,420</span><strong>Projected monthly impact</strong></article>
+    </section>
+    <section class="experiment">
+      <div>
+        <h2>Product page CTA test</h2>
+        <p>Hypothesis: clearer purchase copy and stronger shipping reassurance will increase add-to-cart conversion on product detail pages.</p>
+        <label for="traffic">Traffic allocated to variant B</label>
+        <input id="traffic" type="range" min="10" max="90" value="50">
+      </div>
+      <div class="bars" aria-label="Conversion comparison chart">
+        <div><span>Control</span><meter min="0" max="10" value="5.4">5.4%</meter><strong>5.4%</strong></div>
+        <div><span>Variant B</span><meter id="variantMeter" min="0" max="10" value="6.2">6.2%</meter><strong id="rate">6.2%</strong></div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
