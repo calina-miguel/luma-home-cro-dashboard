@@ -14,5 +14,13 @@ Production: https://luma-home-cro-dashboard.vercel.app
 ## Stack
 
 - HTML, CSS, JavaScript
-- GitHub Pages hosting
+- Vercel hosting
+
+## Local Operations
+
+```bash
+npm run start
+```
+
+The CRO dashboard is served as a static experiment interface and can be deployed directly through Vercel.
 
